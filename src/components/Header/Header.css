@@ -1,0 +1,14 @@
+.navbar {
+    background-color: black;
+}
+.icon-social{
+    color: #C1DBF1 !important;
+}
+.fab{
+    font-size: 25px;
+}
+@media (min-width: 600px) {
+    .collapse{
+        justify-content: end;
+    }
+}
