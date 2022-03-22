@@ -1,0 +1,35 @@
+.container-skills {
+    height          : auto;
+    max-width       : 90%;
+    border-radius   : 2%;
+    background-color: white;
+    margin          : 10px;
+}
+
+.list-group-item {
+    border: none !important;
+}
+
+.list-group-item>i {
+    color: green;
+}
+
+.icon-skills {
+    font-size: 60px;
+}
+
+@media (min-width: 768px) {
+    .row-skills {
+        display        : flex;
+        justify-content: space-between
+    }
+
+    .container-skills:last-child {
+        margin          : 0 auto;
+    }
+}
+@media (min-width: 992px) {
+    .container-skills:last-child {
+        margin          : 10px ;
+    }
+}
