@@ -1,4 +1,5 @@
 import React from 'react'
+import { FormContact } from '../FormContact/FormContact'
 import './Contact.css'
 export const Contact = () => {
   return (
@@ -8,6 +9,7 @@ export const Contact = () => {
                 <h1>Contacto</h1>
             </div>
         </div>
+        <FormContact/>
     </>
   )
 }
