@@ -25,6 +25,7 @@ export const FormContact = () => {
                     timer: 3000
                 })
             })
+
         reset()
     }
     return (
@@ -34,16 +35,16 @@ export const FormContact = () => {
             </div>
             <div className='col-12 container-input'>
                 <form className='' onSubmit={handleSubmit(submit)}>
-                    <input type="text" className="form-control" placeholder='Nombre completo' {...register('nombre', validations.nombre)} />
+                    <input type="text" className={errors.nombre ? ("form-control is-invalid") : ("form-control ")} placeholder='Nombre completo' {...register('nombre', validations.nombre)} />
                     {errors.nombre ? <small className='text-danger'>{errors.nombre.message}</small> : null}
 
-                    <input type="email" className="form-control" placeholder='Example@gmail.com' {...register('email', validations.email)} />
+                    <input type="email" className={errors.email ? ("form-control is-invalid") : ("form-control")} placeholder='Example@gmail.com' {...register('email', validations.email)} />
                     {errors.email ? <small className='text-danger'>{errors.email.message}</small> : null}
 
-                    <input type="text" className="form-control" placeholder='Asunto' {...register('asunto', validations.asunto)} />
+                    <input type="text" className={errors.asunto ? ("form-control is-invalid") : ("form-control")} placeholder='Asunto' {...register('asunto', validations.asunto)} />
                     {errors.asunto ? <small className='text-danger'>{errors.asunto.message}</small> : null}
 
-                    <textarea className='form-control' name="comments" maxLength="500" minLength="20" placeholder='Deje su comentario...' {...register('comentario', validations.comentario)}></textarea>
+                    <textarea className={errors.asunto ? ("form-control is-invalid") : ("form-control")} name="comments" maxLength="500" minLength="20" placeholder='Deje su comentario...' {...register('comentario', validations.comentario)}></textarea>
                     {errors.comentario ? <small className='text-danger'>{errors.comentario.message}</small> : null}
 
                     <button className='btn btn-success' type="submit" id='button'>Enviar</button>
