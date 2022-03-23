@@ -1,0 +1,12 @@
+.row-proyects{
+    background-color: #009688;
+    color: white;
+}
+.title-proyects{
+    text-align: center;
+}
+@media(min-width:768px){
+    .title-proyects{
+        text-align: left;
+    }
+}
