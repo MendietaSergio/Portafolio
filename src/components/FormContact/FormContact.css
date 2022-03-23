@@ -1,0 +1,17 @@
+.container-form {
+    width          : 90%;
+    justify-content: center;
+}
+
+.foto-perfil-form {
+    width        : 150px;
+    height       : 150px;
+    border-radius: 50%;
+    margin: 20px 0;
+}
+.container-input input,textarea{
+    margin: 20px 0 ;
+}
+.btn-success{
+    width: 100% !important;
+}
