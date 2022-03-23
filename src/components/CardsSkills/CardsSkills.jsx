@@ -50,7 +50,7 @@ export const CardsSkills = () => {
             </div>
             <div className="col-12 col-md-3 col-lg container-skills pb-2">
                 <div className="row icon-skills justify-content-center d-flex ">
-                    <i className="fas fa-tools my-2"></i>
+                <i class="fas fa-server my-2"></i>
                 </div>
                 <h4 className="text-center">Servidores</h4>
                 <div className='d-flex justify-content-center'>
