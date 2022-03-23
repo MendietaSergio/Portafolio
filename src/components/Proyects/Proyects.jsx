@@ -5,8 +5,8 @@ export const Proyects = () => {
     return (
         <>
             <div className='row row-proyects'>
-                <div className="col-12">
-                    <h1 className='title-proyects' >Proyectos</h1>
+                <div className="col-12 d-flex container-title-proyects">
+                    <h1>Proyectos</h1>
                 </div>
                 <div className="col-12">
                     <p>En esta sección están algunos de los proyectos que voy
