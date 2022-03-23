@@ -1,14 +1,16 @@
-import { useState } from 'react'
-import './App.css'
 import { Header } from './components/Header/Header'
 import { Presentation } from './components/Presentation/Presentation'
+import { Proyects } from './components/Proyects/Proyects'
+import { Skills } from './components/Skills/Skills'
 
 function App() {
 
   return (
-    <div className="App">
+    <div className="container">
         <Header />
         <Presentation/>
+        <Skills/>
+        <Proyects/>
     </div>
   )
 }
