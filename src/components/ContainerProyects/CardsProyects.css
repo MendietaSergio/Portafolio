@@ -1,0 +1,94 @@
+.container-proyects {
+    height: auto;
+}
+
+.card {
+    height         : 250px;
+    width          : 100% !important;
+    text-shadow    : 0 1px 3px rgba(0, 0, 0, 0.6);
+    background-size: cover !important;
+    color          : white;
+    position       : relative;
+    border-radius  : 5px;
+    margin-bottom  : 20px;
+    position       : relative;
+    overflow       : hidden;
+    background     : radial-gradient(#111 50%, #000 100%);
+}
+
+.card-img {
+    background-position: center;
+    background-size    : cover;
+    background-repeat  : no-repeat;
+    width              : 100%;
+    border-radius      : 5px;
+    height             : 100%;
+    overflow           : hidden;
+}
+
+/* .card>a>.fas,.card>a>.fab {
+    font-size: 50px;
+} */
+
+.row-proyects-cards {
+    margin: 10px !important;
+}
+
+.card img {
+    transition: all 0.3s ease-out;
+}
+
+.card:hover img {
+    opacity: 0.3
+}
+
+.card .card-info {
+    position  : absolute;
+    bottom    : 0;
+    left      : 0;
+    padding   : 15px;
+    width     : 100%;
+    text-align: center;
+    color     : #fff;
+    font-size : 18px;
+}
+
+.card .card-info .card-title {
+    font-weight: 700;
+    font-size  : 32px;
+    margin     : 0 0 20px;
+    transform  : translateY(30px);
+    opacity    : 0;
+    transition : all 0.3s ease-out;
+
+}
+
+.card .card-info a {
+    color          : #fff;
+    cursor         : pointer;
+    display        : inline-block;
+    padding        : 10px 25px;
+    border-radius  : 5px;
+    text-decoration: none;
+    transform      : translateY(30px);
+    opacity        : 0;
+    transition     : all 0.3s ease-out 0.4s;
+}
+
+.card:hover .card-info .card-title {
+    opacity  : 1;
+    transform: translateY(0px);
+}
+
+.card:hover .card-info a {
+    opacity  : 1;
+    transform: translateY(0px);
+}
+
+.card:hover .card-info a .fas {
+    font-size: 30px !important;
+}
+
+.card:hover .card-info a .fab {
+    font-size: 30px !important;
+}
