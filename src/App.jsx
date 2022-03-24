@@ -1,4 +1,6 @@
+import { BackToTop } from './components/BackToTop/BackToTop'
 import { Contact } from './components/Contact/Contact'
+import { Footer } from './components/Footer/Footer'
 import { Header } from './components/Header/Header'
 import { Presentation } from './components/Presentation/Presentation'
 import { Proyects } from './components/Proyects/Proyects'
@@ -8,11 +10,13 @@ function App() {
 
   return (
     <div className="container">
-        <Header />
-        <Presentation/>
-        <Skills/>
-        <Proyects/>
-        <Contact/>
+      <Header />
+      <Presentation />
+      <Skills />
+      <Proyects />
+      <Contact />
+      <Footer />
+      <BackToTop/>
     </div>
   )
 }
