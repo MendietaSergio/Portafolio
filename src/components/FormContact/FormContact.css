@@ -13,8 +13,8 @@ form {
 }
 
 .container-input input,
-textarea {
-    margin: 20px 0;
+textarea, .btn-success {
+    margin: 10px 0;
 }
 
 .btn-success {
