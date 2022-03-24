@@ -11,7 +11,6 @@ export const ContainerProyects = () => {
         const getProyects = async () => {
             await axios.get(URL.main + 'api/proyects')
                 .then((res) => {
-                    console.log("res => ", res.data.listProyects);
                     setProyects(res.data.listProyects)
                 })
                 .catch((error) => console.log(error))
@@ -28,8 +27,8 @@ export const ContainerProyects = () => {
                 </>
             ) : (
                 proyects.map((proyect) => (
-                    <div className="col-12 col-md-4 col-lg-3 container-proyects">
-                        <CardsProyects key={proyect._id} proyect={proyect} />
+                    <div key={proyect._id} className="col-12 col-md-4 col-lg-3 container-proyects">
+                        <CardsProyects  proyect={proyect} />
                     </div>
                 ))
             )}

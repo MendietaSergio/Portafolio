@@ -23,7 +23,7 @@ export const CardsProyects = ({ proyect }) => {
                         target="_blank"
                         className='icon-web'
                     >
-                        <i class="fas fa-globe" height='50px'></i>
+                        <i className="fas fa-globe" height='50px'></i>
 
                     </a>
                 </div>
