@@ -34,3 +34,26 @@ code {
   color: white;
   cursor: pointer;
 }
+/* INICIO HEADER */
+.navbar {
+  background-color: rgb(0, 0, 0);
+}
+
+.icon-social {
+  color: #C1DBF1 !important;
+}
+
+.fab {
+  font-size: 25px;
+}
+
+.navbar-nav {
+  font-weight: 800;
+}
+
+@media (min-width: 768px) {
+  .collapse {
+      justify-content: end;
+  }
+}
+/* FIN HEADER */
