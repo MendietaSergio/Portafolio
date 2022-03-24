@@ -4,7 +4,7 @@ import './presentation.css'
 export const Presentation = () => {
   return (
     <div className='img-header' >
-      <div className='row'>
+      <div className='row row-presentation'>
         <div className='col-12 col-md-6'>
           <div className='img-foto'>
             <img className='foto-perfil' src={imgPerfil} alt="Foto perfil" />
