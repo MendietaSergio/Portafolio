@@ -1,0 +1,129 @@
+.btnTop {
+    /* position: relative; */
+    position: fixed;
+    right   : 120px;
+    bottom  : 120px;
+}
+
+.backtotop {
+    width             : 50px;
+    height            : 50px;
+    cursor            : pointer;
+    position          : fixed;
+    transform         : translateX(-50%) translateY(-50%);
+    right             : 0;
+    bottom            : 0;
+    animation-name    : animacion1;
+    animation-duration: 3s;
+    
+}
+
+.btnTop:before {
+    content    : 'Back to Top';
+    position   : absolute;
+    transform  : translateX(-50%) translateY(45px);
+    font-size  : 15px;
+    transition : 200ms;
+    color      : transparent;
+    font-weight: bold;
+    width      : 100px;
+    bottom     : -50px;
+    left       : 10px
+}
+
+.btnTop:hover::before {
+    color: red;
+}
+
+.btnTop:hover img {
+    animation: bounce 3s infinite linear;
+}
+
+@keyframes bounce {
+    0% {
+        transform: translateX(-50%) translateY(-50%)
+    }
+
+    25% {
+        transform: translateX(-50%) translateY(-65%)
+    }
+
+    50% {
+        transform: translateX(-50%) translateY(-50%)
+    }
+
+    75% {
+        transform: translateX(-50%) translateY(-35%)
+    }
+
+    100% {
+        transform: translateX(-50%) translateY(-50%)
+    }
+}
+@keyframes animacion1 {
+    0% {
+      opacity: 0.1;
+    }
+    10% {
+          opacity: 0.2;
+    }
+    20% {
+          opacity: 0.3;
+    }
+    /* 30% {
+      opacity: 0.4;
+    }
+    40% {
+      opacity: 0.5;
+  
+    }
+    50% {
+      opacity: 0.6;
+  
+    } */
+    60% {
+      opacity: 0.7;
+    }
+    70% {
+      opacity: 0.8;
+    }
+    80% {
+      opacity: 0.9;
+  
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+@media(min-width: 768px) {
+    .backtotop {
+        right: 20px !important;
+    }
+
+    .btnTop:before {
+        left: 0;
+    }
+
+}
+
+@media(min-width: 1024px) {
+    .backtotop {
+        right: 100px !important;
+    }
+
+    .btnTop:before {
+        left  : -80px;
+        bottom: -55px;
+    }
+}
+
+@media(min-width: 1024px) {
+    .backtotop {
+        right: 200px !important;
+    }
+
+    .btnTop:before {
+        left  : -180px;
+        bottom: -55px;
+    }
+}
