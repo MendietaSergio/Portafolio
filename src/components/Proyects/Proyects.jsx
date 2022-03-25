@@ -1,6 +1,6 @@
 import React from 'react'
 import { ContainerProyects } from '../ContainerProyects/ContainerProyects'
-import './Proyects.css'
+
 export const Proyects = () => {
     return (
         <>

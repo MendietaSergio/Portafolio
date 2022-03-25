@@ -1,5 +1,5 @@
 import React from 'react'
-import './FormContact.css'
+
 import imgPerfil from '../../img/Foto-Perfil.jpg'
 import { validations } from '../../utils/Validations/Validations'
 import axios from 'axios'

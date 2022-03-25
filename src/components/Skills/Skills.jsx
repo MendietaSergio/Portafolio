@@ -1,5 +1,5 @@
 import React from 'react'
-import './Skills.css'
+
 import { CardsSkills } from '../CardsSkills/CardsSkills'
 
 export const Skills = () => {

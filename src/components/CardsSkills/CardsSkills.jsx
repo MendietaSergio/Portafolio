@@ -1,5 +1,5 @@
 import React from 'react'
-import './CardsSkills.css'
+
 export const CardsSkills = () => {
     return (
         <div className='row row-skills'>

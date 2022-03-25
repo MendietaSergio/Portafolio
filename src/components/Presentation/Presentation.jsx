@@ -1,6 +1,6 @@
 import React from 'react'
 import imgPerfil from '../../img/Foto-Perfil.jpg'
-import './presentation.css'
+
 export const Presentation = () => {
   return (
     <div className='img-header' >

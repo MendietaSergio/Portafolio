@@ -1,5 +1,5 @@
 import React from 'react'
-import './CardsProyects.css'
+
 export const CardsProyects = ({ proyect }) => {
     return (
         <div className="d-flex justify-content-center">

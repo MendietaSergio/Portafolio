@@ -57,3 +57,396 @@ code {
   }
 }
 /* FIN HEADER */
+/* INICIO PRESENTATION */
+.row-presentation{
+  background-color: #00000070;
+}
+.img-header {
+  background-image   : url('https://res.cloudinary.com/freelance01/image/upload/v1647902573/Proyects_Portfolio/portada_pmof5b.png');
+  background-position: center ;
+  background-size    : cover;
+  background-repeat  : no-repeat;
+}
+.img-foto{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 22px 0;
+}
+.foto-perfil{
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+.container-info{
+  padding: 10px;
+  font-family: 'Font Awesome 5 Brands';
+  color: white;
+  font-family: 600;
+}
+.container-info span, .container-info p{
+  font-family: monospace;
+  font-weight: 800;
+}
+.container-info>span{
+  text-align: center;
+}
+.collapse{
+  text-align: center;
+}
+/* FIN PRESENTATION */
+/* INICIO SKILLS */
+@media (min-width: 600px) {
+  .container-info-skills{
+      margin: 0 auto;
+      width: 500px;
+  }
+}
+/* FIN SKILLS */
+/* INICIO CARDSKILLS */
+.container-skills {
+  height          : auto;
+  max-width       : 90%;
+  border-radius   : 2%;
+  background-color: white;
+  margin          : 10px;
+}
+
+.list-group-item {
+  border: none !important;
+}
+
+.list-group-item>i {
+  color: green;
+}
+
+.icon-skills {
+  font-size: 60px;
+}
+
+@media (min-width: 768px) {
+  .row-skills {
+      display        : flex;
+      justify-content: space-between
+  }
+
+  .container-skills:last-child {
+      margin          : 0 auto;
+  }
+}
+@media (min-width: 992px) {
+  .container-skills:last-child {
+      margin          : 10px ;
+  }
+}
+/* FIN CARDSKILLS */
+/* INICIO PROYECTS */
+.row-proyects {
+  background-color: #009688;
+  color           : white;
+}
+
+.container-title-proyects {
+  justify-content: center;
+}
+
+@media(min-width:768px) {
+  .title-proyects {
+      text-align: left;
+  }
+
+  .container-title-proyects {
+      padding-top    : 20px;
+      justify-content: left;
+      padding-left   : 5%;
+      padding-bottom : 20px;
+  }
+}
+@media(min-width:1024px) {
+  .row-proyects p{
+      font-size: 24px;
+  }
+}
+/* FIN PROYECTS */
+/* INICIO CARDSPROYECTS */
+.container-proyects {
+  height: auto;
+}
+
+.card {
+  height         : 250px;
+  width          : 100% !important;
+  text-shadow    : 0 1px 3px rgba(0, 0, 0, 0.6);
+  background-size: cover !important;
+  color          : white;
+  position       : relative;
+  border-radius  : 5px;
+  margin-bottom  : 20px;
+  position       : relative;
+  overflow       : hidden;
+  background     : radial-gradient(#111 50%, #000 100%);
+}
+
+.card-img {
+  background-position: center;
+  background-size    : cover;
+  background-repeat  : no-repeat;
+  width              : 100%;
+  border-radius      : 5px;
+  height             : 100%;
+  overflow           : hidden;
+}
+
+/* .card>a>.fas,.card>a>.fab {
+  font-size: 50px;
+} */
+
+.row-proyects-cards {
+  margin: 10px !important;
+}
+
+.card img {
+  transition: all 0.3s ease-out;
+}
+
+.card:hover img {
+  opacity: 0.3
+}
+
+.card .card-info {
+  position  : absolute;
+  bottom    : 0;
+  left      : 0;
+  padding   : 15px;
+  width     : 100%;
+  text-align: center;
+  color     : #fff;
+  font-size : 18px;
+}
+
+.card .card-info .card-title {
+  font-weight: 700;
+  font-size  : 32px;
+  margin     : 0 0 20px;
+  transform  : translateY(30px);
+  opacity    : 0;
+  transition : all 0.3s ease-out;
+
+}
+
+.card .card-info a {
+  color          : #fff;
+  cursor         : pointer;
+  display        : inline-block;
+  padding        : 10px 25px;
+  border-radius  : 5px;
+  text-decoration: none;
+  transform      : translateY(30px);
+  opacity        : 0;
+  transition     : all 0.3s ease-out 0.4s;
+}
+
+.card:hover .card-info .card-title {
+  opacity  : 1;
+  transform: translateY(0px);
+}
+
+.card:hover .card-info a {
+  opacity  : 1;
+  transform: translateY(0px);
+}
+
+.card:hover .card-info a .fas {
+  font-size: 30px !important;
+}
+
+.card:hover .card-info a .fab {
+  font-size: 30px !important;
+}
+
+/* FIN CARDSPROYECTS */
+/* INICIO CONTACT */
+.container-contact{
+  height: 120px;
+  background-color: #009688;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+@media(min-width: 768px){
+  .container-contact{
+      justify-content: left;
+      padding-left: 5%;
+  }
+}
+
+/* FIN CONTACT */
+/* INICIO FORMCONTACT */
+.container-form {
+  width          : 90%;
+  justify-content: center;
+}
+form {
+  width: 100% !important;
+}
+.foto-perfil-form {
+  width        : 150px;
+  height       : 150px;
+  border-radius: 50%;
+  margin       : 20px 0;
+}
+
+.container-input input,
+textarea, .btn-success {
+  margin: 10px 0;
+}
+
+.btn-success {
+  width: 100% !important;
+}
+
+@media(min-width: 768px) {
+  form {
+      margin: 0 auto;
+      width: 70% !important ;
+  }
+}
+@media(min-width: 1024px) {
+  form {
+      width: 40% !important ;
+  }
+}
+/* FIN FORMCONTACT */
+/* INICIO BACKTOTOP */
+.btnTop {
+  /* position: relative; */
+  position: fixed;
+  right   : 120px;
+  bottom  : 120px;
+}
+
+.backtotop {
+  width             : 50px;
+  height            : 50px;
+  cursor            : pointer;
+  position          : fixed;
+  transform         : translateX(-50%) translateY(-50%);
+  right             : 0;
+  bottom            : 0;
+  animation-name    : animacion1;
+  animation-duration: 3s;
+  
+}
+
+.btnTop:before {
+  content    : 'Back to Top';
+  position   : absolute;
+  transform  : translateX(-50%) translateY(45px);
+  font-size  : 15px;
+  transition : 200ms;
+  color      : transparent;
+  font-weight: bold;
+  width      : 100px;
+  bottom     : -50px;
+  left       : 10px
+}
+
+.btnTop:hover::before {
+  color: red;
+}
+
+.btnTop:hover img {
+  animation: bounce 3s infinite linear;
+}
+
+@keyframes bounce {
+  0% {
+      transform: translateX(-50%) translateY(-50%)
+  }
+
+  25% {
+      transform: translateX(-50%) translateY(-65%)
+  }
+
+  50% {
+      transform: translateX(-50%) translateY(-50%)
+  }
+
+  75% {
+      transform: translateX(-50%) translateY(-35%)
+  }
+
+  100% {
+      transform: translateX(-50%) translateY(-50%)
+  }
+}
+@keyframes animacion1 {
+  0% {
+    opacity: 0.1;
+  }
+  10% {
+        opacity: 0.2;
+  }
+  20% {
+        opacity: 0.3;
+  }
+  /* 30% {
+    opacity: 0.4;
+  }
+  40% {
+    opacity: 0.5;
+
+  }
+  50% {
+    opacity: 0.6;
+
+  } */
+  60% {
+    opacity: 0.7;
+  }
+  70% {
+    opacity: 0.8;
+  }
+  80% {
+    opacity: 0.9;
+
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@media(min-width: 768px) {
+  .backtotop {
+      right: 20px !important;
+  }
+
+  .btnTop:before {
+      left: 0;
+  }
+
+}
+
+@media(min-width: 1024px) {
+  .backtotop {
+      right: 100px !important;
+  }
+
+  .btnTop:before {
+      left  : -80px;
+      bottom: -55px;
+  }
+}
+
+@media(min-width: 1024px) {
+  .backtotop {
+      right: 200px !important;
+  }
+
+  .btnTop:before {
+      left  : -180px;
+      bottom: -55px;
+  }
+}
+/* FIN BACKTOTOP */
