@@ -9,6 +9,10 @@
 .container{
   padding: 0;
 }
+.container-fluid{
+  padding: 0 !important;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -48,7 +52,11 @@ code {
 }
 
 .navbar-nav {
-  font-weight: 800;
+  font-weight: 600;
+}
+.navbar-nav a:hover {
+  background-color: rgb(114, 119, 119);
+  border-radius: 3%;
 }
 
 @media (min-width: 768px) {
@@ -58,11 +66,9 @@ code {
 }
 /* FIN HEADER */
 /* INICIO PRESENTATION */
-.row-presentation{
-  background-color: #00000070;
-}
+
 .img-header {
-  background-image   : url('https://res.cloudinary.com/freelance01/image/upload/v1647902573/Proyects_Portfolio/portada_pmof5b.png');
+  background-image   : url('https://res.cloudinary.com/freelance01/image/upload/v1648434132/Proyects_Portfolio/portada_portfolio_ny1hcy.png');
   background-position: center ;
   background-size    : cover;
   background-repeat  : no-repeat;
@@ -142,14 +148,20 @@ code {
 /* FIN CARDSKILLS */
 /* INICIO PROYECTS */
 .row-proyects {
-  background-color: #009688;
   color           : white;
+  background-image   : url('https://res.cloudinary.com/freelance01/image/upload/v1648434132/Proyects_Portfolio/portada_portfolio_ny1hcy.png');
+  background-position: center ;
+  background-size    : cover;
+  background-repeat  : no-repeat;
 }
 
 .container-title-proyects {
   justify-content: center;
 }
-
+.container-info-proyects{
+  margin-bottom: 0;
+  padding-bottom: 10px;
+}
 @media(min-width:768px) {
   .title-proyects {
       text-align: left;
@@ -266,9 +278,14 @@ code {
 
 /* FIN CARDSPROYECTS */
 /* INICIO CONTACT */
+.img-contact {
+  background-image   : url('https://res.cloudinary.com/freelance01/image/upload/v1648434132/Proyects_Portfolio/portada_portfolio_ny1hcy.png');
+  background-position: center ;
+  background-size    : cover;
+  background-repeat  : no-repeat;
+}
 .container-contact{
   height: 120px;
-  background-color: #009688;
   width: 100%;
   align-items: center;
   justify-content: center;
@@ -341,7 +358,7 @@ textarea, .btn-success {
 }
 
 .btnTop:before {
-  content    : 'Back to Top';
+  content    : '';
   position   : absolute;
   transform  : translateX(-50%) translateY(45px);
   font-size  : 15px;
@@ -353,9 +370,6 @@ textarea, .btn-success {
   left       : 10px
 }
 
-.btnTop:hover::before {
-  color: red;
-}
 
 .btnTop:hover img {
   animation: bounce 3s infinite linear;
