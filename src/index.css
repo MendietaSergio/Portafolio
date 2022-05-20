@@ -464,3 +464,41 @@ textarea, .btn-success {
   }
 }
 /* FIN BACKTOTOP */
+
+/* SKELETON */
+
+.skeleton-proyect>.card{
+  width: 100%;
+  border-radius: 6px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(209, 43, 43, 0.12);
+  border-color: #EAEAEA !important;
+}
+.image{
+  height: 100%;
+  width: 100%;
+}
+.loading .image{
+  background-color: #fbfbfbbf;
+  background-image: linear-gradient(110deg,
+  rgba(255,255,255,0) 40%,
+  rgba(255,255,255, .5) 50%,
+  rgba(255,255,255,0) 60%);
+  background-size: 200% 100%;
+  background-position-x: 160%;
+  animation: 1.5s loading ease-in-out infinite;
+}
+
+.loading::before{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 26px;
+  color: #fefefe;
+}
+@keyframes loading{
+  to{
+    background-position-x: -60%;
+  }
+}
