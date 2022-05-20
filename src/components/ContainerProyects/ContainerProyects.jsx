@@ -1,6 +1,7 @@
 import axios from 'axios'
 import React, { useState, useEffect } from 'react'
 import { URL } from '../../Constants/apiUrl'
+import { Skeleton } from '../Skeleton/Skeleton'
 import { CardsProyects } from './CardsProyects'
 
 
@@ -14,7 +15,11 @@ export const ContainerProyects = () => {
                     setProyects(res.data.listProyects)
                 })
                 .catch((error) => console.log(error))
-                .finally(() => setLoading(false))
+                .finally(() => {
+                    setTimeout(() =>{
+                        setLoading(false)
+                    }, 2000)
+                })
         }
         getProyects()
     }, [])
@@ -23,7 +28,7 @@ export const ContainerProyects = () => {
         <div className='row row-proyects-cards'>
             {loading ? (
                 <>
-                    <h1 className='text-center'>Cargando...<i className="fas fa-spinner fa-pulse" /></h1>
+                    <Skeleton />
                 </>
             ) : (
                 proyects.map((proyect) => (
