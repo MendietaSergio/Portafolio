@@ -1,3 +1,3 @@
 export const URL = {
-    main:"https://serveremailportfolio.herokuapp.com/"
+    main:"https://server-portfolio-pi.vercel.app/"
 }
