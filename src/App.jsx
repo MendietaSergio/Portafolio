@@ -7,7 +7,7 @@ import { Proyects } from "./components/Proyects/Proyects";
 import { Skills } from "./components/Skills/Skills";
 import ReactGA from "react-ga";
 function App() {
-  ReactGA.initialize(G - J73Q2JFBHG);
+  ReactGA.initialize("G - J73Q2JFBHG");
   return (
     <div className="container-fluid">
       <Header />
