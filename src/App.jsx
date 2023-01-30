@@ -5,10 +5,9 @@ import { Header } from "./components/Header/Header";
 import { Presentation } from "./components/Presentation/Presentation";
 import { Proyects } from "./components/Proyects/Proyects";
 import { Skills } from "./components/Skills/Skills";
-const { VITE_APP_ID_TRACKER } = import.meta.env;
 import ReactGA from "react-ga";
 function App() {
-  ReactGA.initialize(VITE_APP_ID_TRACKER);
+  ReactGA.initialize(G - J73Q2JFBHG);
   return (
     <div className="container-fluid">
       <Header />
