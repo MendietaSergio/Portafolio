@@ -33,7 +33,7 @@ export const ContainerProyects = () => {
 
   return (
     <div className="row row-proyects-cards">
-      <div className="col-12 d-flex justify-content-start my-4">
+      <div className="col-12 d-flex justify-content-start my-4 container-btn">
         <div>
           <button
             className={`btn mx-3 ${

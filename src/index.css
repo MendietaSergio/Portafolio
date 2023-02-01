@@ -1,15 +1,18 @@
-*{
-  padding: 0;
-  margin: 0;
+* {
+  padding   : 0;
+  margin    : 0;
   box-sizing: border-box;
 }
-.row{
+
+.row {
   margin: 0 !important;
 }
-.container{
+
+.container {
   padding: 0;
 }
-.container-fluid{
+
+.container-fluid {
   padding: 0 !important;
 }
 
@@ -18,9 +21,9 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
-  -webkit-font-smoothing: antialiased;
+  -webkit-font-smoothing : antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #e3e3e3bf;
+  background-color       : #e3e3e3bf;
 }
 
 code {
@@ -29,15 +32,17 @@ code {
 }
 
 
-.row-footer{
-  margin-top: 10px !important;
-  color: white;
+.row-footer {
+  margin-top      : 10px !important;
+  color           : white;
   background-color: black;
 }
-.row-footer a{
-  color: white;
+
+.row-footer a {
+  color : white;
   cursor: pointer;
 }
+
 /* INICIO HEADER */
 .navbar {
   background-color: rgb(0, 0, 0);
@@ -54,60 +59,71 @@ code {
 .navbar-nav {
   font-weight: 600;
 }
+
 .navbar-nav a:hover {
   background-color: rgb(114, 119, 119);
-  border-radius: 3%;
+  border-radius   : 3%;
 }
 
 @media (min-width: 768px) {
   .collapse {
-      justify-content: end;
+    justify-content: end;
   }
 }
+
 /* FIN HEADER */
 /* INICIO PRESENTATION */
 
 .img-header {
   background-image   : url('https://res.cloudinary.com/freelance01/image/upload/v1648434132/Proyects_Portfolio/portada_portfolio_ny1hcy.png');
-  background-position: center ;
+  background-position: center;
   background-size    : cover;
   background-repeat  : no-repeat;
 }
-.img-foto{
-  display: flex;
+
+.img-foto {
+  display        : flex;
   justify-content: center;
-  align-items: center;
-  margin: 22px 0;
+  align-items    : center;
+  margin         : 22px 0;
 }
-.foto-perfil{
-  width: 200px;
-  height: 200px;
+
+.foto-perfil {
+  width        : 200px;
+  height       : 200px;
   border-radius: 50%;
 }
-.container-info{
-  padding: 10px;
+
+.container-info {
+  padding    : 10px;
   font-family: 'Font Awesome 5 Brands';
-  color: white;
+  color      : white;
   font-family: 600;
 }
-.container-info span, .container-info p{
+
+.container-info span,
+.container-info p {
   font-family: monospace;
   font-weight: 800;
 }
-.container-info>span{
+
+.container-info>span {
   text-align: center;
 }
-.collapse{
+
+.collapse {
   text-align: center;
 }
+
 /* FIN PRESENTATION */
 /* INICIO SKILLS */
 @media (min-width: 600px) {
-  .container-info-skills{
-      margin: 0 auto;
-      width: 500px;
+  .container-info-skills {
+    margin: 0 auto;
+    width : 500px;
   }
 }
+
 /* FIN SKILLS */
 /* INICIO CARDSKILLS */
 .container-skills {
@@ -132,25 +148,27 @@ code {
 
 @media (min-width: 768px) {
   .row-skills {
-      display        : flex;
-      justify-content: space-between
+    display        : flex;
+    justify-content: space-between
   }
 
   .container-skills:last-child {
-      margin          : 0 auto;
+    margin: 0 auto;
   }
 }
+
 @media (min-width: 992px) {
   .container-skills:last-child {
-      margin          : 10px ;
+    margin: 10px;
   }
 }
+
 /* FIN CARDSKILLS */
 /* INICIO PROYECTS */
 .row-proyects {
-  color           : white;
+  color              : white;
   background-image   : url('https://res.cloudinary.com/freelance01/image/upload/v1648434132/Proyects_Portfolio/portada_portfolio_ny1hcy.png');
-  background-position: center ;
+  background-position: center;
   background-size    : cover;
   background-repeat  : no-repeat;
 }
@@ -158,27 +176,37 @@ code {
 .container-title-proyects {
   justify-content: center;
 }
-.container-info-proyects{
-  margin-bottom: 0;
+
+.container-info-proyects {
+  margin-bottom : 0;
   padding-bottom: 10px;
 }
+
+.container-btn {
+  height     : 100px;
+  overflow-x : scroll;
+  align-items: center;
+}
+
 @media(min-width:768px) {
   .title-proyects {
-      text-align: left;
+    text-align: left;
   }
 
   .container-title-proyects {
-      padding-top    : 20px;
-      justify-content: left;
-      padding-left   : 5%;
-      padding-bottom : 20px;
+    padding-top    : 20px;
+    justify-content: left;
+    padding-left   : 5%;
+    padding-bottom : 20px;
   }
 }
+
 @media(min-width:1024px) {
-  .row-proyects p{
-      font-size: 24px;
+  .row-proyects p {
+    font-size: 24px;
   }
 }
+
 /* FIN PROYECTS */
 /* INICIO CARDSPROYECTS */
 .container-proyects {
@@ -280,22 +308,23 @@ code {
 /* INICIO CONTACT */
 .img-contact {
   background-image   : url('https://res.cloudinary.com/freelance01/image/upload/v1648434132/Proyects_Portfolio/portada_portfolio_ny1hcy.png');
-  background-position: center ;
+  background-position: center;
   background-size    : cover;
   background-repeat  : no-repeat;
 }
-.container-contact{
-  height: 120px;
-  width: 100%;
-  align-items: center;
+
+.container-contact {
+  height         : 120px;
+  width          : 100%;
+  align-items    : center;
   justify-content: center;
-  color: white;
+  color          : white;
 }
 
-@media(min-width: 768px){
-  .container-contact{
-      justify-content: left;
-      padding-left: 5%;
+@media(min-width: 768px) {
+  .container-contact {
+    justify-content: left;
+    padding-left   : 5%;
   }
 }
 
@@ -305,9 +334,11 @@ code {
   width          : 90%;
   justify-content: center;
 }
+
 form {
   width: 100% !important;
 }
+
 .foto-perfil-form {
   width        : 150px;
   height       : 150px;
@@ -316,7 +347,8 @@ form {
 }
 
 .container-input input,
-textarea, .btn-success {
+textarea,
+.btn-success {
   margin: 10px 0;
 }
 
@@ -326,15 +358,17 @@ textarea, .btn-success {
 
 @media(min-width: 768px) {
   form {
-      margin: 0 auto;
-      width: 70% !important ;
+    margin: 0 auto;
+    width : 70% !important;
   }
 }
+
 @media(min-width: 1024px) {
   form {
-      width: 40% !important ;
+    width: 40% !important;
   }
 }
+
 /* FIN FORMCONTACT */
 /* INICIO BACKTOTOP */
 .btnTop {
@@ -354,7 +388,7 @@ textarea, .btn-success {
   bottom            : 0;
   animation-name    : animacion1;
   animation-duration: 3s;
-  
+
 }
 
 .btnTop:before {
@@ -377,35 +411,39 @@ textarea, .btn-success {
 
 @keyframes bounce {
   0% {
-      transform: translateX(-50%) translateY(-50%)
+    transform: translateX(-50%) translateY(-50%)
   }
 
   25% {
-      transform: translateX(-50%) translateY(-65%)
+    transform: translateX(-50%) translateY(-65%)
   }
 
   50% {
-      transform: translateX(-50%) translateY(-50%)
+    transform: translateX(-50%) translateY(-50%)
   }
 
   75% {
-      transform: translateX(-50%) translateY(-35%)
+    transform: translateX(-50%) translateY(-35%)
   }
 
   100% {
-      transform: translateX(-50%) translateY(-50%)
+    transform: translateX(-50%) translateY(-50%)
   }
 }
+
 @keyframes animacion1 {
   0% {
     opacity: 0.1;
   }
+
   10% {
-        opacity: 0.2;
+    opacity: 0.2;
   }
+
   20% {
-        opacity: 0.3;
+    opacity: 0.3;
   }
+
   /* 30% {
     opacity: 0.4;
   }
@@ -420,85 +458,93 @@ textarea, .btn-success {
   60% {
     opacity: 0.7;
   }
+
   70% {
     opacity: 0.8;
   }
+
   80% {
     opacity: 0.9;
 
   }
+
   100% {
     opacity: 1;
   }
 }
+
 @media(min-width: 768px) {
   .backtotop {
-      right: 20px !important;
+    right: 20px !important;
   }
 
   .btnTop:before {
-      left: 0;
+    left: 0;
   }
 
 }
 
 @media(min-width: 1024px) {
   .backtotop {
-      right: 100px !important;
+    right: 100px !important;
   }
 
   .btnTop:before {
-      left  : -80px;
-      bottom: -55px;
+    left  : -80px;
+    bottom: -55px;
   }
 }
 
 @media(min-width: 1024px) {
   .backtotop {
-      right: 200px !important;
+    right: 200px !important;
   }
 
   .btnTop:before {
-      left  : -180px;
-      bottom: -55px;
+    left  : -180px;
+    bottom: -55px;
   }
 }
+
 /* FIN BACKTOTOP */
 
 /* SKELETON */
 
-.skeleton-proyect>.card{
-  width: 100%;
+.skeleton-proyect>.card {
+  width        : 100%;
   border-radius: 6px;
-  overflow: hidden;
-  box-shadow: 0 4px 6px rgba(209, 43, 43, 0.12);
-  border-color: #EAEAEA !important;
-}
-.image{
-  height: 100%;
-  width: 100%;
-}
-.loading .image{
-  background-color: #fbfbfbbf;
-  background-image: linear-gradient(110deg,
-  rgba(255,255,255,0) 40%,
-  rgba(255,255,255, .5) 50%,
-  rgba(255,255,255,0) 60%);
-  background-size: 200% 100%;
-  background-position-x: 160%;
-  animation: 1.5s loading ease-in-out infinite;
+  overflow     : hidden;
+  box-shadow   : 0 4px 6px rgba(209, 43, 43, 0.12);
+  border-color : #EAEAEA !important;
 }
 
-.loading::before{
-  position: absolute;
-  top: 50%;
-  left: 50%;
+.image {
+  height: 100%;
+  width : 100%;
+}
+
+.loading .image {
+  background-color: #fbfbfbbf;
+  background-image: linear-gradient(110deg,
+      rgba(255, 255, 255, 0) 40%,
+      rgba(255, 255, 255, .5) 50%,
+      rgba(255, 255, 255, 0) 60%);
+  background-size      : 200% 100%;
+  background-position-x: 160%;
+  animation            : 1.5s loading ease-in-out infinite;
+}
+
+.loading::before {
+  position : absolute;
+  top      : 50%;
+  left     : 50%;
   transform: translate(-50%, -50%);
   font-size: 26px;
-  color: #fefefe;
+  color    : #fefefe;
 }
-@keyframes loading{
-  to{
+
+@keyframes loading {
+  to {
     background-position-x: -60%;
   }
 }
