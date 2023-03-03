@@ -1,0 +1,138 @@
+.main-chatbot {
+    position: fixed;
+    right   : 6px;
+    bottom  : 15px;
+}
+
+.main-chatbotFalse {
+    width: auto;
+}
+
+.main-chatbotTrue {
+    width: 95%;
+}
+
+.container-info-chat {
+    flex-direction  : column;
+    display         : flex;
+    border-color    : grey;
+    padding         : 10px;
+    background-color: #616161;
+    border-radius   : 15px;
+}
+
+.chatClosed {
+    width           : 16px;
+    height          : 16px;
+    background-color: white;
+    color           : black;
+    border          : none;
+    border-radius   : 5px;
+    display         : flex;
+    align-items     : center;
+    position        : absolute;
+    justify-content : center;
+    left            : 8px;
+    top             : 8px;
+}
+
+.chatClosed:hover {
+    border-color: transparent !important;
+}
+
+.container-imgChat {
+    width    : 80px;
+    height   : 80px;
+    transform: scaleX(-1);
+    cursor   : pointer;
+}
+
+.container-text {
+    flex-direction: column;
+    display       : flex;
+    height        : 300px;
+    overflow-y    : scroll;
+}
+
+.container-text::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+.container-text::-webkit-scrollbar-thumb {
+    background-color: rgb(103, 110, 112);
+}
+
+.container-text::-webkit-scrollbar {
+    width        : 8px;
+    border-radius: 20px;
+    height       : 8px;
+}
+
+.container-message {
+    background-color: black;
+    margin          : 10px 0;
+    width           : auto;
+    padding         : 15px;
+}
+
+.messageUser {
+    border-bottom-left-radius: 30px;
+    border-top-left-radius   : 30px;
+    border-top-right-radius  : 30px;
+    text-align               : end;
+    align-self               : self-end;
+    max-width                : 100%;
+}
+
+.messageBot {
+    align-self                : self-start;
+    text-align                : start;
+    max-width                 : 100%;
+    border-bottom-right-radius: 30px;
+    border-top-left-radius    : 30px;
+    border-top-right-radius   : 30px;
+}
+
+.formQuestion {
+    display    : flex;
+    align-items: center;
+    width      : 100% !important;
+}
+
+.inputQuestion {
+    width           : 100%;
+    border-color    : #838383 !important;
+    color           : white;
+    background-color: #222222;
+}
+
+.linkMaxirest,
+.linkMaxirest:hover {
+    color          : #ff6600;
+    text-decoration: underline;
+}
+
+
+@media(min-width: 768px) {
+    .main-chatbot {
+        position: fixed;
+        right   : 6px;
+        bottom  : 15px;
+    }
+
+    .main-chatbotFalse {
+        width: auto;
+    }
+
+    .main-chatbotTrue {
+        width: 40%;
+    }
+
+    .messageUser {
+        max-width: 80%;
+    }
+
+    .messageBot {
+        max-width: 80%;
+    }
+}

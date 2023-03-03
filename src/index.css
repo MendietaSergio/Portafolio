@@ -374,7 +374,7 @@ textarea,
 .btnTop {
   /* position: relative; */
   position: fixed;
-  right   : 120px;
+  left    : 120px;
   bottom  : 120px;
 }
 
@@ -384,7 +384,7 @@ textarea,
   cursor            : pointer;
   position          : fixed;
   transform         : translateX(-50%) translateY(-50%);
-  right             : 0;
+  left              : 40px;
   bottom            : 0;
   animation-name    : animacion1;
   animation-duration: 3s;
@@ -475,7 +475,7 @@ textarea,
 
 @media(min-width: 768px) {
   .backtotop {
-    right: 20px !important;
+    left: 40px !important;
   }
 
   .btnTop:before {
@@ -486,7 +486,7 @@ textarea,
 
 @media(min-width: 1024px) {
   .backtotop {
-    right: 100px !important;
+    left: 100px !important;
   }
 
   .btnTop:before {
