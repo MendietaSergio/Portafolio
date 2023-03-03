@@ -1,7 +1,7 @@
 export const answers = {
     Intro: (
         <p>
-            Mi nombre es Sergio, soy desarrollador web. Realizo páginas web como freelance, estoy constantemente aprendiendo y mejorando mi stack en MERN. Actualmente trabajo en <a className="linkMaxirest" href="/asd" target={"_blank"}>Maxirest</a> como soporte tecnico. Soy de Quilmes, Buenos Aires, tengo 27 años.
+            Mi nombre es Sergio, soy desarrollador web. Realizo páginas web como freelance, estoy constantemente aprendiendo y mejorando mi stack en MERN. Actualmente trabajo en <a className="linkMaxirest" href="https://www.linkedin.com/company/maxirest/mycompany/" target={"_blank"}>Maxirest</a> como soporte tecnico. Soy de Quilmes, Buenos Aires, tengo 27 años.
         </p>
     ),
     Dudas: (
