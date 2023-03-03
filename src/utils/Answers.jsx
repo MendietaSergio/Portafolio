@@ -16,12 +16,12 @@ export const answers = {
     ),
     Mitrabajo: (
         <p>
-            Actualmente trabajo en <a className="linkMaxirest" href="/asd" target={"_blank"}>Maxirest </a>como soporte tecnico, brindando asistencia telefonica/chat a usuarios del sistema Maxirest.
+            Actualmente trabajo en <a className="linkMaxirest" href="https://www.linkedin.com/company/maxirest/mycompany/" target={"_blank"}>Maxirest </a>como soporte tecnico, brindando asistencia telefonica/chat a usuarios del sistema Maxirest.
         </p>
     ),
     Dudasdelchat: (
         <p>
-            El chat esta realizado con React y Co:Here AI. Gracias a <a href="http://" target="_blank" rel="noopener noreferrer">Gonzalo Pozzo</a> que realizó un streaming explicando el uso de Co:Here AI.
+            El chat esta realizado con React y Co:Here AI. Gracias a <a href="http://gonzalopozzo.com/" target="_blank" rel="noopener noreferrer">Gonzalo Pozzo</a> que realizó un streaming explicando el uso de Co:Here AI.
         </p>
     ),
     Programacion: (
