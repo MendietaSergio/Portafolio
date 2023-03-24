@@ -21,7 +21,7 @@ export const answers = {
     ),
     Dudasdelchat: (
         <p>
-            El chat esta realizado con React y Co:Here AI. Gracias a <a href="http://gonzalopozzo.com/" target="_blank" rel="noopener noreferrer">Gonzalo Pozzo</a> que realizó un streaming explicando el uso de Co:Here AI.
+            El chat esta realizado con React y Co:Here AI. Gracias a <a href="http://gonzalopozzo.com/" target="_blank" rel="noopener noreferrer">Gonzalo Pozzo</a> que realizó un stream explicando el uso de Co:Here AI.
         </p>
     ),
     Programacion: (
@@ -61,4 +61,13 @@ export const examples = [
     { "label": "Random", "text": "Tengo problemas con mi impresora" },
     { "label": "CV", "text": "Como veo tu curriculum?" },
     { "label": "Dudas", "text": "Contestas cualquier pregunta?" }
+]
+export const viewExamples = [
+    { id: 1, "text": "Quien sos?" },
+    { id: 2, "text": "Por donde te puedo contactar?" },
+    { id: 3, "text": "Donde trabajas?" },
+    { id: 4, "text": "Como hiciste este chat?" },
+    { id: 5, "text": "Cual es tu stack?" },
+    { id: 6, "text": "Como veo tu curriculum?" },
+    { id: 7, "text": "Contestas cualquier pregunta?" }
 ]

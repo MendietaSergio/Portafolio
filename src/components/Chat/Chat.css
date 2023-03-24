@@ -17,7 +17,7 @@
     display         : flex;
     border-color    : grey;
     padding         : 10px;
-    background-color: #616161;
+    background-color: #ffffff;
     border-radius   : 15px;
 }
 
@@ -69,7 +69,7 @@
 }
 
 .container-message {
-    background-color: black;
+    background-color: #00000014;
     margin          : 10px 0;
     width           : auto;
     padding         : 15px;
@@ -101,10 +101,24 @@
 
 .inputQuestion {
     width           : 100%;
-    border-color    : #838383 !important;
-    color           : white;
-    background-color: #222222;
+    border-color    : #00000014 !important;
+    color           : black;
+    background-color: #00000014;
 }
+
+.inputQuestion:active {
+    border-color: #00000014 !important;
+}
+
+.fa-question-circle {
+    align-self: end;
+    cursor    : pointer;
+}
+
+.fa-question-circle {
+    color: #007bff;
+}
+
 
 .linkMaxirest,
 .linkMaxirest:hover {
@@ -112,6 +126,11 @@
     text-decoration: underline;
 }
 
+@media(min-width: 425px) {
+    .main-chatbot {
+        width: 80%;
+    }
+}
 
 @media(min-width: 768px) {
     .main-chatbot {
@@ -125,7 +144,7 @@
     }
 
     .main-chatbotTrue {
-        width: 40%;
+        width: 350px;
     }
 
     .messageUser {

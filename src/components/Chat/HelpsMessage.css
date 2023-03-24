@@ -1,0 +1,41 @@
+.container-helps-message {
+    width           : 150px;
+    height          : 250px;
+    position        : fixed;
+    bottom          : 380px;
+    background-color: white;
+    right           : 0;
+    overflow-y      : scroll;
+    display         : none;
+}
+
+.container-helps-message ul {
+    list-style: none;
+}
+
+.container-helps-message li {
+    padding: 6px;
+}
+
+.container-helps-message li:hover {
+    background-color: bisque;
+    cursor          : pointer;
+}
+
+.viewMessage {
+    display: block;
+}
+
+.container-helps-message::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+.container-helps-message::-webkit-scrollbar-thumb {
+    background-color: rgb(103, 110, 112);
+}
+
+.container-helps-message::-webkit-scrollbar {
+    width        : 8px;
+    border-radius: 20px;
+    height       : 8px;
+}

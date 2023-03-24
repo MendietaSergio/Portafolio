@@ -2,6 +2,7 @@ import React, { useState, useEffect, useRef } from 'react'
 import { answers, examples } from '../../utils/Answers'
 import { URL } from "../../Constants/apiUrl";
 import './Chat.css'
+import { HelpsMessages } from './HelpsMessages';
 const { VITE_APP_APIKEY } = import.meta.env
 
 export const Chat = ({ toggle, setToggle }) => {
@@ -12,6 +13,7 @@ export const Chat = ({ toggle, setToggle }) => {
             text: `Hola, soy un bot 🤖 preparado para contestar algunas preguntas sobre Sergio 👩🏻‍💻. Haceme tu pregunta.`
         }
     ])
+    const [viewMessage, setViewMessage] = useState(false)
     const [question, setQuestion] = useState("")
     const [loading, setLoading] = useState(false)
     const container = useRef(null)
@@ -50,11 +52,14 @@ export const Chat = ({ toggle, setToggle }) => {
         <main className={`main-chatbot ${toggle ? 'main-chatbotTrue' : 'main-chatbotFalse'}`}>
             {toggle ? (
                 <div className="container-info-chat border border-gray-400">
+                    <HelpsMessages setQuestion={setQuestion} setViewMessage={setViewMessage} viewMessage={viewMessage} />
                     <button className='chatClosed' onClick={() => setToggle(false)}>×</button>
+                    <i className="fas fa-question-circle"
+                        onMouseOver={() => setViewMessage(true)}></i>
                     <div ref={container} className="container-text">
                         {messages.map((message) => (
                             <div
-                                className={`container-message text-white ${message.type === "bot" ? "messageBot" : "messageUser"}`}
+                                className={`container-message text-black ${message.type === "bot" ? "messageBot" : "messageUser"}`}
                                 key={message.id}>
                                 {message.text}
                             </div>
