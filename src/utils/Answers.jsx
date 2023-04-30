@@ -1,3 +1,5 @@
+import downloadCV from '../pdf/CV_Sergio_Mendieta-FullStack_2022.pdf'
+
 export const answers = {
     Intro: (
         <p>
@@ -36,7 +38,11 @@ export const answers = {
     ),
     CV: (
         <p>
-            Podes descargar mi CV por este ACA:
+            Podes descargarlo → <a
+                href={downloadCV}
+                download="CV-Mendieta-Sergio.pdf" title='Descargar CV' >
+                CV
+            </a>
         </p>
     )
 }
