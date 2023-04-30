@@ -5,7 +5,7 @@ import { Header } from "./components/Header/Header";
 import { Presentation } from "./components/Presentation/Presentation";
 import { Proyects } from "./components/Proyects/Proyects";
 import { Skills } from "./components/Skills/Skills";
-import ReactGA from "react-ga";
+import ReactGA from "react-ga4";
 import { Chat } from "./components/Chat/Chat";
 import { useState } from "react";
 function App() {
